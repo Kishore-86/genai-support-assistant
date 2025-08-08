@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenAI Customer Support</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="min-h-screen bg-fixed bg-cover bg-center bg-no-repeat font-inter" style="background-image: url('assets/bg86.jpg');">
+  <!-- Dark overlay for readability -->
+  <div class="fixed inset-0 bg-black/40 backdrop-blur-sm"></div>
+  
+  <!-- Main container -->
+  <div class="relative z-10 flex items-center justify-center min-h-screen p-4">
+    <div class="chat-container glass-morphism w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl">
+      
+      <!-- Header -->
+      <div class="chat-header flex items-center mb-6 p-4 border-b border-white/10">
+        <div class="logo-container w-12 h-12 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center mr-4">
+          <img src="assets/logo.png" alt="GenAI Logo" class="w-10 h-10 rounded-full object-cover" />
+        </div>
+        <div>
+          <h1 class="text-xl font-semibold text-white drop-shadow-sm">GenAI Support</h1>
+          <p class="text-sm text-white/70 drop-shadow-sm">AI-Powered Assistant</p>
+        </div>
+        <div class="ml-auto">
+          <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg"></div>
+        </div>
+      </div>
+
+      <!-- Chat Area -->
+      <div id="chat-box" class="chat-messages space-y-4 max-h-96 overflow-y-auto px-4 mb-6">
+        <!-- Welcome message -->
+        <div class="bot-message fade-in">
+          <div class="message-bubble bot-bubble">
+            <p>👋 Welcome to GenAI Support! How can I assist you today?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <div class="chat-input p-4">
+        <div class="input-container glass-input relative">
+          <input
+            id="user-input"
+            type="text"
+            placeholder="Type your question here..."
+            class="w-full bg-transparent text-white placeholder-white/60 px-4 py-3 pr-14 outline-none text-sm"
+            maxlength="500"
+          />
+          <button
+            id="send-btn"
+            class="send-button absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white transition-all duration-200 flex items-center justify-center shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label="Send message"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="text-xs text-white/50 mt-2 text-center">Press Enter to send • Powered by Amazon Bedrock</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
