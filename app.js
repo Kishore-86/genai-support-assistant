@@ -29,7 +29,7 @@ function createMessage(content, sender, animate = true) {
           <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/>
         </svg>
       </div>
-      <span class="text-xs font-medium text-gray-600">AI Assistant</span>
+      <span class="text-xs font-semibold text-gray-700">AI Assistant</span>
       <span class="text-xs text-gray-400">• ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
     `;
     messageBubble.appendChild(botInfo);
@@ -94,8 +94,8 @@ function createLoader() {
         <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/>
       </svg>
     </div>
-    <span class="text-xs font-medium text-gray-600">AI Assistant</span>
-    <span class="text-xs text-cyan-600">typing...</span>
+    <span class="text-xs font-semibold text-gray-700">AI Assistant</span>
+    <span class="text-xs text-cyan-700 font-medium">typing...</span>
   `;
   loaderBubble.appendChild(botInfo);
 
@@ -120,7 +120,7 @@ function createLoader() {
 
   const typingText = document.createElement("span");
   typingText.textContent = "AI is thinking...";
-  typingText.classList.add("text-sm", "text-gray-600", "animate-pulse");
+  typingText.classList.add("text-sm", "text-gray-700", "font-medium", "animate-pulse");
 
   loaderContent.appendChild(loaderSpinner);
   loaderContent.appendChild(typingDots);
