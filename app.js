@@ -372,18 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Enhanced visual feedback for button interactions
-sendBtn.addEventListener("mousedown", () => {
-  sendBtn.style.transform = "translateY(1px) scale(0.98)";
-});
-
-sendBtn.addEventListener("mouseup", () => {
-  sendBtn.style.transform = "translateY(-2px) scale(1.05)";
-});
-
-sendBtn.addEventListener("mouseleave", () => {
-  sendBtn.style.transform = "translateY(-1px) scale(1)";
-});
+// Enhanced visual feedback for button interactions - handled by CSS
 
 // Add keyboard shortcuts
 document.addEventListener("keydown", (e) => {
