@@ -4,7 +4,8 @@ const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
 // API configuration - Replace with your actual endpoint
-const API_URL = window.API_URL || "https://your-api-id.execute-api.region.amazonaws.com/prod/chat";
+const API_URL = "https://zg881nj9zf.execute-api.us-east-1.amazonaws.com/CustomerChatHandler";
+
 
 // Message creation function
 function createMessage(content, sender, animate = true) {
