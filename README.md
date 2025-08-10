@@ -40,7 +40,7 @@ Build a generative AI-powered customer support assistant using AWS services.
 ## Demo Video
 [![Watch the demo](https://img.youtube.com/vi/PiqXBlOxfZI/0.jpg)](https://www.youtube.com/watch?v=PiqXBlOxfZI)
 
-## Screenshot
+## Screenshots
 
 ### Chatbot UI
 ![Chatbot UI](frontend/assets/UI.png)
