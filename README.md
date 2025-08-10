@@ -38,11 +38,9 @@ Build a generative AI-powered customer support assistant using AWS services.
 - HTML, Tailwind CSS, JavaScript for frontend  
 
 ## Demo Video
-[![Watch the demo](https://img.youtube.com/vi/PiqXBlOxfZI/0.jpg)](https://www.youtube.com/watch?v=PiqXBlOxfZI)
+**👇 Click the image below to watch the full demo video on YouTube:**
 
-## Screenshots
+[![Watch the demo](frontend/assets/UI.png)](https://www.youtube.com/watch?v=PiqXBlOxfZI)
 
-### Chatbot UI
-![Chatbot UI](frontend/assets/UI.png)
 
 
